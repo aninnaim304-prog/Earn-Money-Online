@@ -577,18 +577,14 @@
 
                 // The Promise is a simulator for the ad network callback
 
-                Promise.resolve(show_10126000(// Rewarded interstitial
+                Promise.resolve(// Rewarded interstitial
 
 show_10126000().then(() => {
     // You need to add your user reward function here, which will be executed after the user watches the ad.
     // For more details, please refer to the detailed instructions.
     alert('You have seen an ad!');
 })// Rewarded interstitial
-
-show_10126000().then(() => {
-    // You need to add your user reward function here, which will be executed after the user watches the ad.
-    // For more details, please refer to the detailed instructions.
-    alert('You have seen an ad!');
+                    
 }))).then(handleAdSuccess).catch(handleAdError);
 
             }
