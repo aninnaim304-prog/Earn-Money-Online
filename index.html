@@ -249,9 +249,9 @@
 
                 <div class="input-group">
 
-                    <label for="paymentAddress">Your Bkash Wallet Number </label>
+                    <label for="paymentAddress">Your USDT Wallet Address (TRC20)</label>
 
-                    <input type="text" id="paymentAddress" placeholder="Enter Bkash Number">
+                    <input type="text" id="paymentAddress" placeholder="e.g., T... (TRC20 Address)">
 
                 </div>
 
@@ -303,7 +303,7 @@
 
         <div class="status-message" id="statusMessage"></div>
 
-        <div class="admin-panel" id="Anin Naim"><h3>👑 Admin Panel</h3><p id="6723587806"></p></div>
+        <div class="admin-panel" id="adminPanel"><h3>👑 Admin Panel</h3><p id="userInfo"></p></div>
 
     </div>
 
@@ -577,9 +577,7 @@
 
                 // The Promise is a simulator for the ad network callback
 
-                Promise.resolve(show_1012600
-                    
-            ()).then(handleAdSuccess).catch(handleAdError);
+                Promise.resolve(show_10126000()).then(handleAdSuccess).catch(handleAdError);
 
             }
 
@@ -605,7 +603,7 @@
 
                 if (!walletAddress.startsWith('T') || walletAddress.length < 34) {
 
-                    showStatus('Please enter a valid Bkash wallet address.', 'error');
+                    showStatus('Please enter a valid USDT (TRC20) wallet address.', 'error');
 
                     return;
 
